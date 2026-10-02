@@ -16,15 +16,15 @@ import {
 
 import profileImg from '../assets/profile.avif';
 import aboutProfile from '../assets/aboutprofile.avif';
-import projectImg12 from '../assets/project12.avif';
-import projectImg10 from '../assets/project10.avif';
-import projectImg11 from '../assets/project11.avif';
-import projectImg9 from '../assets/project9.avif';
+import projectImg1 from '../assets/project1.avif';
+import projectImg2 from '../assets/project2.avif';
+import projectImg3 from '../assets/project3.avif';
+import projectImg4 from '../assets/project4.avif';
+import projectImg5 from '../assets/project5.avif';
+import projectImg6 from '../assets/project6.avif';
 import projectImg7 from '../assets/project7.avif';
 import projectImg8 from '../assets/project8.avif';
-import projectImg13 from '../assets/project13.avif';
-import projectImg14 from '../assets/project14.avif';
-import projectImg15 from '../assets/project15.avif';
+import projectImg9 from '../assets/project9.avif';
 import logo from '../assets/logo.avif';
  
 export const assets = {
@@ -110,7 +110,7 @@ export const projects = [
     title: "Smart Wildlife Safari Management System (GuideLanka)",
     description: "A university project that develops a smart wildlife safari management platform connecting tourists, safari drivers, and park authorities through digital bookings, real-time GPS tracking, wildlife reporting, route optimization, and emergency response features.",
     longDescription: "GuideLanka is a university project developed as a smart wildlife safari management system for modernizing safari operations in Sri Lanka. The platform connects three main user groups: Tourists, Safari Drivers, and Park Authorities through a unified digital ecosystem. The system consists of a Tourist Web Application, Driver Mobile Application, and Authority Administrative Dashboard. Tourists can explore wildlife information, discover verified safari drivers, book safari vehicles, view wildlife sightings, and communicate with drivers. Drivers can manage bookings, navigate safari routes using real-time GPS tracking, record wildlife sightings with GPS coordinates, communicate with tourists, and send emergency SOS alerts. Park authorities can monitor live safari operations through a GIS-based administrative dashboard, track active safari jeeps, manage driver information, monitor wildlife sightings, handle emergency incidents, manage restricted zones, and analyze tourist and operational data. The project uses a Node.js and Express REST API with Supabase PostgreSQL, JWT-based authentication, Leaflet/OpenStreetMap for GIS mapping, and notification services.",
-    image: projectImg15,
+    image: projectImg9,
     tech: [
       "React 19",
       "Vite",
@@ -167,7 +167,7 @@ export const projects = [
     title: "Home Services Marketplace Mobile App (Ape Bass)",
     description: "A full-featured mobile marketplace that connects customers with skilled home service providers, enabling service discovery, bookings, job management, messaging, reviews, and provider profiles.",
     longDescription: "Ape Bass is a Sri Lankan home services marketplace mobile application built with Flutter to connect customers with skilled service providers such as electricians, plumbers, carpenters, and other home-service professionals. The platform provides dedicated experiences for both Customers and Service Providers. Customers can explore service categories, discover providers, view profiles and ratings, submit service requests, manage bookings, communicate through in-app messaging, and leave reviews. Service Providers can complete professional onboarding, submit verification details, manage incoming job requests, accept and complete jobs, and maintain their profiles and portfolios. The application integrates with a RESTful backend API for core platform functionality, Firebase Cloud Messaging for push notifications, and SharedPreferences for local session and user data management.",
-    image: projectImg14,
+    image: projectImg2,
     tech: [
       "Flutter",
       "Dart",
@@ -207,7 +207,7 @@ export const projects = [
     title: "AI Plant Disease Detection App (AgriCare LK)",
     description: "An AI-powered mobile application that helps Sri Lankan farmers identify plant diseases from images and provides localized Sinhala treatment recommendations.",
     longDescription: "AgriCare LK is a full-stack AI-powered mobile application designed to help Sri Lankan farmers quickly identify plant diseases using image-based diagnosis. The application allows users to capture or upload photos of affected plants and uses trained TensorFlow/Keras deep learning models to predict diseases in Tomato, Chili, and Brinjal crops. The system combines AI predictions with a SQL Server database to provide Sinhala-language symptoms, treatment recommendations, and agricultural guidance through an easy-to-use Flutter mobile interface.",
-    image: projectImg7,
+    image: projectImg1,
     tech: [
       "Flutter",
       "Dart",
@@ -242,7 +242,7 @@ export const projects = [
     title: "Automated Gate ANPR Security & Access Control System",
     description: "An AI-powered automated gate security system that detects vehicles, recognizes Sri Lankan license plates, and manages entry and exit events using computer vision and OCR.",
     longDescription: "The Automated Gate ANPR Security & Access Control System is an end-to-end computer vision solution designed to automate vehicle identification and gate access management. The system uses YOLOv8 for real-time vehicle and license plate detection, EasyOCR for number plate recognition, and specialized processing for Sri Lankan license plate formats. It automatically identifies vehicle entry and exit based on yellow rear and white front plates, records access events, tracks active sessions, and provides both a desktop monitoring interface and a web-based dashboard.",
-    image: projectImg8,
+    image: projectImg3,
     tech: [
       "Python",
       "YOLOv8",
@@ -281,7 +281,7 @@ export const projects = [
     title: "E-Commerce Backend System",
     description: "A RESTful e-commerce backend API built with Spring Boot, providing user management, product management, shopping cart functionality, and order checkout using MySQL.",
     longDescription: "The E-Commerce Backend System is a scalable RESTful API developed with Spring Boot for managing the core backend operations of an online shopping platform. The system provides APIs for user management, product catalog management, shopping carts, and order processing. It follows a layered architecture using Controllers, Services, Repositories, and Models, with Spring Data JPA and Hibernate handling database operations. The application also includes request validation, custom exception handling, stock tracking, cart management, and order checkout functionality.",
-    image: projectImg9,
+    image: projectImg4,
     tech: [
       "Java 21",
       "Spring Boot 3",
@@ -318,7 +318,7 @@ export const projects = [
     title: "Library Management System (Sarasavi Library System)",
     description: "A Windows desktop library management application built with C# Windows Forms and SQL Server for managing books, users, loans, returns, reservations, and catalogue inquiries.",
     longDescription: "Sarasavi Library System is a desktop-based Library Management System designed to digitize and streamline day-to-day library operations. The application provides a secure login system and a centralized dashboard for managing book registration, user registration, book loans, returns, reservations, and catalogue inquiries. Built with C# Windows Forms and SQL Server Express, the system uses ADO.NET for database communication and implements business rules such as loan limits, reference-copy restrictions, automatic return dates, reservation handling, and automated book and user number generation.",
-    image: projectImg10,
+    image: projectImg5,
     tech: [
       "C#",
       ".NET Framework 4.7.2",
@@ -354,7 +354,7 @@ export const projects = [
     title: "ITUM Student Event Management System",
     description: "A full-stack web application that enables ITUM students to discover and register for campus events while providing administrators with tools to manage events, users, and registrations.",
     longDescription: "The ITUM Student Event Management System is a web-based platform developed to simplify the management of university events and student registrations. Students can create accounts, browse upcoming events, view event details, and register using unique event codes. Administrators have access to a role-based dashboard where they can create, update, and delete events, upload event images, manage student accounts, and monitor all event registrations. The system uses PHP sessions and prepared statements for backend processing with MySQL as the database.",
-    image: projectImg11,
+    image: projectImg6,
     tech: [
       "HTML5",
       "CSS3",
@@ -392,7 +392,7 @@ export const projects = [
     title: "Smart Home Automation System",
     description: "An embedded smart home automation system built with an ATmega32 microcontroller that automatically controls temperature, lighting, and gas safety using real-time sensor data.",
     longDescription: "Smart Home Automation System is an embedded automation project developed using Embedded C and an ATmega32 AVR microcontroller. The system continuously monitors temperature, ambient light, and smoke/gas levels through analog sensors and automatically controls a fan, heater, lamp, and safety buzzer according to predefined conditions. A 16x2 LCD provides real-time temperature and system-status feedback, while the complete circuit can be designed and tested using Proteus simulation before physical deployment.",
-    image: projectImg13,
+    image: projectImg7,
     tech: [
       "Embedded C",
       "ATmega32",
@@ -431,7 +431,7 @@ export const projects = [
     title: "Tourist Web Application (GoCeylon)",
     description: "A modern and responsive Sri Lanka tourism web application that helps travelers explore destinations, tour packages, and travel services through an engaging and user-friendly interface.",
     longDescription: "GoCeylon is a modern front-end tourism platform designed to showcase the beauty of Sri Lanka and help travelers discover popular destinations, curated tour packages, and travel services. The application features an immersive hero section, destination highlights, detailed tour packages, trust-building features, smooth navigation, and scroll-based animations. Built with React 19, Tailwind CSS 4, and Vite, the application delivers a fast, responsive, and visually engaging experience across desktop and mobile devices.",
-    image: projectImg12,
+    image: projectImg8,
     tech: [
       "JavaScript",
       "React 19",

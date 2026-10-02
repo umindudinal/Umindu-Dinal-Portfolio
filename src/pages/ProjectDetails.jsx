@@ -50,8 +50,8 @@ const ProjectDetails = () => {
     >
       <div className="container mx-auto px-6 max-w-6xl">
         
-        {/* Back Link & Category */}
-        <div className="flex flex-wrap justify-between items-center mb-8 gap-4">
+        {/* Top Navigation & Breadcrumb */}
+        <div className="flex flex-wrap justify-between items-center mb-6 gap-4">
           <button 
             onClick={() => navigate('/#projects')} 
             className="inline-flex items-center text-gray-400 hover:text-purple transition font-medium group"
@@ -65,6 +65,31 @@ const ProjectDetails = () => {
               {project.displayCategory || (Array.isArray(project.category) ? project.category.join(' • ') : project.category)}
             </span>
           )}
+        </div>
+
+        {/* Project Navigation (Previous / Next) */}
+        <div className="mb-10 pb-8 border-b border-dark-300 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <Link 
+            to={`/project/${prevProject.id}`}
+            className="flex items-center gap-3 p-4 rounded-xl bg-dark-200 border border-dark-300 hover:border-purple/50 hover:bg-dark-300/40 transition group w-full sm:w-auto"
+          >
+            <FaArrowLeft className="text-purple group-hover:-translate-x-1 transition-transform" />
+            <div className="text-left">
+              <p className="text-xs text-gray-400">Previous Project</p>
+              <p className="font-semibold text-white group-hover:text-purple transition line-clamp-1">{prevProject.title}</p>
+            </div>
+          </Link>
+
+          <Link 
+            to={`/project/${nextProject.id}`}
+            className="flex items-center justify-end gap-3 p-4 rounded-xl bg-dark-200 border border-dark-300 hover:border-purple/50 hover:bg-dark-300/40 transition group w-full sm:w-auto text-right"
+          >
+            <div>
+              <p className="text-xs text-gray-400">Next Project</p>
+              <p className="font-semibold text-white group-hover:text-purple transition line-clamp-1">{nextProject.title}</p>
+            </div>
+            <FaArrowRight className="text-purple group-hover:translate-x-1 transition-transform" />
+          </Link>
         </div>
 
         {/* Header Title & Tagline */}
@@ -230,32 +255,6 @@ const ProjectDetails = () => {
           </div>
 
         </div>
-
-        {/* Project Pagination Footer */}
-        <div className="mt-20 pt-10 border-t border-dark-300 flex flex-col sm:flex-row justify-between items-center gap-6">
-          <Link 
-            to={`/project/${prevProject.id}`}
-            className="flex items-center gap-3 p-4 rounded-xl bg-dark-200 border border-dark-300 hover:border-purple/50 transition group w-full sm:w-auto"
-          >
-            <FaArrowLeft className="text-purple group-hover:-translate-x-1 transition-transform" />
-            <div className="text-left">
-              <p className="text-xs text-gray-400">Previous Project</p>
-              <p className="font-semibold text-white group-hover:text-purple transition line-clamp-1">{prevProject.title}</p>
-            </div>
-          </Link>
-
-          <Link 
-            to={`/project/${nextProject.id}`}
-            className="flex items-center justify-end gap-3 p-4 rounded-xl bg-dark-200 border border-dark-300 hover:border-purple/50 transition group w-full sm:w-auto text-right"
-          >
-            <div>
-              <p className="text-xs text-gray-400">Next Project</p>
-              <p className="font-semibold text-white group-hover:text-purple transition line-clamp-1">{nextProject.title}</p>
-            </div>
-            <FaArrowRight className="text-purple group-hover:translate-x-1 transition-transform" />
-          </Link>
-        </div>
-
       </div>
     </motion.div>
   )
