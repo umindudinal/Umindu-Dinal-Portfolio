@@ -7,8 +7,7 @@ const titles = [
   "Mobile App & Systems Developer",
   "Full-Stack Software Engineer",
   "AI & Deep Learning Developer",
-  "Backend & Cloud API Developer",
-  "IT Student @ University of Moratuwa"
+  "Backend & Cloud API Developer"
 ];
 
 const Hero = () => {
