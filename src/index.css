@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --theme-bg-100: #0b0d14;
+  --theme-bg-200: #121522;
+  --theme-bg-300: #1a1f30;
+  --theme-bg-400: #262e45;
+  --theme-glass-bg: rgba(26, 31, 48, 0.7);
+  --theme-glass-border: rgba(255, 255, 255, 0.08);
+  --theme-glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --theme-scrollbar-track: #0b0d14;
+  --theme-scrollbar-thumb: #262e45;
+  --theme-glow: radial-gradient(circle at 50% 0%, rgba(139, 92, 246, 0.18), transparent 70%);
+  --theme-border-card: rgba(38, 46, 69, 0.5);
+}
+
+html.light {
+  --theme-bg-100: #f8fafc;
+  --theme-bg-200: #ffffff;
+  --theme-bg-300: #f1f5f9;
+  --theme-bg-400: #e2e8f0;
+  --theme-glass-bg: rgba(255, 255, 255, 0.88);
+  --theme-glass-border: rgba(226, 232, 240, 0.9);
+  --theme-glass-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+  --theme-scrollbar-track: #f1f5f9;
+  --theme-scrollbar-thumb: #cbd5e1;
+  --theme-glow: radial-gradient(circle at 50% 0%, rgba(139, 92, 246, 0.09), transparent 70%);
+  --theme-border-card: rgba(226, 232, 240, 0.9);
+}
+
+@theme {
+  --color-dark-100: var(--theme-bg-100);
+  --color-dark-200: var(--theme-bg-200);
+  --color-dark-300: var(--theme-bg-300);
+  --color-dark-400: var(--theme-bg-400);
+  --color-purple: #8b5cf6;
+  --color-pink: #ec4899;
+  --color-blue: #3b82f6;
+  --color-cyan: #06b6d4;
+  --color-emerald: #10b981;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--theme-scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--theme-scrollbar-thumb);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8b5cf6;
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(139, 92, 246, 0.3);
+  color: #ffffff;
+}
+
+/* Custom Utilities */
+.glass-panel {
+  background: var(--theme-glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--theme-glass-border);
+  box-shadow: var(--theme-glass-shadow);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #c084fc 0%, #f472b6 50%, #60a5fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html.light .text-gradient {
+  background: linear-gradient(135deg, #7c3aed 0%, #db2777 50%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-radial-glow {
+  background: var(--theme-glow);
+}
+
+/* ----------------------------------------------------
+   LIGHT MODE TYPOGRAPHY & ELEMENT REFINEMENTS
+   ---------------------------------------------------- */
+html.light {
+  color: #334155;
+}
+
+html.light body {
+  background-color: #f8fafc;
+  color: #334155;
+}
+
+/* In light mode: Headings default to dark slate */
+html.light h1,
+html.light h2,
+html.light h3,
+html.light h4,
+html.light h5,
+html.light h6 {
+  color: #0f172a;
+}
+
+/* General text classes in light mode adapt cleanly to dark slate colors */
+html.light .text-white {
+  color: #0f172a;
+}
+
+html.light .text-gray-100 {
+  color: #0f172a;
+}
+
+html.light .text-gray-200 {
+  color: #1e293b;
+}
+
+html.light .text-gray-300 {
+  color: #334155;
+}
+
+html.light .text-gray-400 {
+  color: #64748b;
+}
+
+/* Filled gradient & solid purple buttons/badges ALWAYS retain white text & icons in both modes */
+a.bg-linear-to-r,
+button.bg-linear-to-r,
+a.bg-gradient-to-r,
+button.bg-gradient-to-r,
+a.bg-purple,
+button.bg-purple,
+span.bg-purple,
+.btn-text-white,
+html.light a.bg-linear-to-r,
+html.light button.bg-linear-to-r,
+html.light a.bg-gradient-to-r,
+html.light button.bg-gradient-to-r,
+html.light a.bg-purple,
+html.light button.bg-purple,
+html.light span.bg-purple,
+html.light .btn-text-white {
+  color: #ffffff !important;
+}
+
+a.bg-linear-to-r *,
+button.bg-linear-to-r *,
+a.bg-gradient-to-r *,
+button.bg-gradient-to-r *,
+a.bg-purple *,
+button.bg-purple *,
+span.bg-purple *,
+.btn-text-white *,
+html.light a.bg-linear-to-r *,
+html.light button.bg-linear-to-r *,
+html.light a.bg-gradient-to-r *,
+html.light button.bg-gradient-to-r *,
+html.light a.bg-purple *,
+html.light button.bg-purple *,
+html.light span.bg-purple *,
+html.light .btn-text-white * {
+  color: #ffffff !important;
+}
+
+/* Light mode form inputs */
+html.light input,
+html.light textarea {
+  color: #0f172a !important;
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light input:focus,
+html.light textarea:focus {
+  border-color: #8b5cf6 !important;
+  box-shadow: 0 0 0 1px #8b5cf6 !important;
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Light mode card borders and shadows */
+html.light .border-dark-400\/50,
+html.light .border-dark-400\/40,
+html.light .border-dark-400\/60,
+html.light .border-dark-400 {
+  border-color: #e2e8f0;
+}
+
+html.light .border-dark-300 {
+  border-color: #e2e8f0;
+}
+
+html.light .border-white\/5,
+html.light .border-white\/10 {
+  border-color: #e2e8f0;
+}
+
+/* Light mode project cards & interactive cards */
+html.light .bg-dark-100 {
+  background-color: #f8fafc;
+}
+
+html.light .bg-dark-200 {
+  background-color: #ffffff;
+}
+
+html.light .bg-dark-100\/90 {
+  background-color: rgba(248, 250, 252, 0.92);
+}
+
+html.light .bg-dark-100\/70 {
+  background-color: rgba(248, 250, 252, 0.8);
+}
+
+html.light .bg-dark-100\/95 {
+  background-color: rgba(248, 250, 252, 0.96);
+}
+
+html.light .bg-dark-300 {
+  background-color: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
+
+html.light .bg-dark-300\/80,
+html.light .bg-dark-300\/60 {
+  background-color: #f1f5f9;
+}
+
+html.light .bg-dark-400 {
+  background-color: #f1f5f9;
+}
+
+html.light .border-dark-400 {
+  border-color: #e2e8f0;
+}
