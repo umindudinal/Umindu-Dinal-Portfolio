@@ -25,6 +25,8 @@ import projectImg6 from '../assets/project6.avif';
 import projectImg7 from '../assets/project7.avif';
 import projectImg8 from '../assets/project8.avif';
 import projectImg9 from '../assets/project9.avif';
+import projectImg10 from '../assets/project10.avif';
+import projectImg11 from '../assets/project11.avif';
 import logo from '../assets/logo.avif';
  
 export const assets = {
@@ -97,11 +99,12 @@ export const skills = [
 
 export const projectCategories = [
   { id: 'Mobile Application', label: 'Mobile Apps' },
-  { id: 'Web Application', label: 'Web Apps' },
+  { id: 'Full Stack Application', label: 'Full Stack' },
   { id: 'Backend API', label: 'Backend APIs' },
   { id: 'Desktop Application', label: 'Desktop Software' },
-  { id: 'Embedded & IoT', label: 'Embedded & IoT' },
-  { id: 'University Project', label: 'University Projects' }
+  { id: 'Embedded & IoT', label: 'IoT' },
+  { id: 'Console Application', label: 'Console Apps' },
+  { id: 'Frontend Application', label: 'Frontend' }
 ];
 
 export const projects = [
@@ -129,7 +132,7 @@ export const projects = [
       "NotifyLK",
       "Nodemailer"
     ],
-    category: ["University Project"],
+    category: ["Full Stack Application"],
     displayCategory: "University Project",
     role: "Full-Stack Developer",
     duration: "2026",
@@ -364,8 +367,8 @@ export const projects = [
       "Font Awesome",
       "XAMPP"
     ],
-    category: ["Web Application"],
-    displayCategory: "Web App",
+    category: ["Full Stack Application"],
+    displayCategory: "Full Stack",
     role: "Full-Stack Developer",
     duration: "2025",
     features: [
@@ -443,8 +446,8 @@ export const projects = [
       "React Scroll",
       "GitHub Pages"
     ],
-    category: ["Web Application"],
-    displayCategory: "Web App",
+    category: ["Frontend Application"],
+    displayCategory: "Sri Lankan Tourism Application",
     role: "Frontend Developer",
     duration: "2025",
     features: [
@@ -463,6 +466,112 @@ export const projects = [
     highlights: "Designed and developed a modern Sri Lankan tourism experience using React 19 and Tailwind CSS 4, combining responsive UI, destination discovery, tour packages, smooth navigation, and engaging scroll animations.",
     demo: "https://umindudinal.github.io/GoCeylon/",
     code: "https://github.com/umindudinal/GoCeylon.git"
+  },
+  {
+    id: "itum-library-management-java",
+    title: "ITUM Library Management System – Java",
+    description:
+      "A console-based library management application built with Java and object-oriented programming, featuring book catalog management, member records, borrowing and returns, overdue fine calculation, and persistent file storage.",
+    longDescription:
+      "The ITUM Library Management System is a Java-based application designed to simplify library operations through a structured, menu-driven console interface. It supports book catalog management, multi-criteria searching, member registration, book borrowing and returns, transaction history, and operational statistics. The system uses object-oriented design to organize library, book, member, transaction, and data management responsibilities. File-based persistence stores book records, member information, and transaction history between application sessions. Additional business rules enforce a maximum of three concurrent loans per member, a default 14-day loan period, and an overdue fine of Rs. 20 per day.",
+    image: projectImg10,
+    tech: [
+      "Java",
+      "Java SE",
+      "Object-Oriented Programming",
+      "File Handling",
+      "File I/O",
+      "Collections Framework",
+      "ArrayList",
+      "Java Scanner",
+      "LocalDate",
+      "Date & Time API",
+      "Console UI",
+      "ANSI Terminal Styling",
+      "Data Persistence",
+      "IntelliJ IDEA"
+    ],
+    category: ["Console Application"],
+    displayCategory: "Java-Based Library Management System",
+    role: "Java Developer",
+    duration: "2026",
+    features: [
+      "Book catalog management",
+      "Add, edit, and remove books",
+      "Search books by title, author, ISBN, or book ID",
+      "Filter books by category and availability",
+      "Library member registration and management",
+      "Book borrowing and return processing",
+      "Maximum three concurrent loans per member",
+      "Automatic due-date tracking",
+      "Overdue fine calculation at Rs. 20 per day",
+      "Fine settlement during book returns",
+      "Transaction history with timestamps",
+      "Unique transaction identifiers",
+      "Persistent storage using text files",
+      "Automatic initialization of data files",
+      "Library statistics dashboard",
+      "Overdue book alerts",
+      "Formatted console tables",
+      "Color-coded book availability and status indicators",
+      "Input validation and safe console interaction"
+    ],
+    highlights:
+      "Implemented a persistent Java library management application using object-oriented design and file handling. Developed book and member management, borrowing and return workflows, transaction auditing, overdue fine calculations, lending-limit enforcement, and a console-based analytics dashboard without requiring an external database.",
+    demo: "",
+    code: "https://github.com/umindudinal/Library_Management_System_JAVA.git"
+  },
+  {
+    id: "shopper-ecommerce-website",
+    title: "Shopper – E-Commerce Clothing Store",
+    description:
+      "A modern, responsive e-commerce clothing website built with React, featuring men's, women's, and kids' collections, product detail pages, shopping cart UI, and login/signup forms.",
+    longDescription:
+      "Shopper is a modern clothing-store frontend designed to provide a smooth online shopping experience across desktop and mobile devices. The application includes a home page with featured products, popular women's collections, exclusive offers, new arrivals, and a newsletter section. Customers can browse men's, women's, and kids' clothing categories, open individual product pages, and access shopping cart and authentication interfaces. React Context API manages shared shop state, while React Router DOM supports client-side navigation and dynamic product routes. The project uses reusable React components, component-specific CSS, and Vite for development and production builds.",
+    image: projectImg11,
+    tech: [
+      "React 19",
+      "JavaScript ES6+",
+      "Vite 7",
+      "React Router DOM 7",
+      "React Context API",
+      "HTML5",
+      "CSS3",
+      "Responsive Web Design",
+      "Component-Based Architecture",
+      "Node.js",
+      "npm",
+      "Git",
+      "GitHub"
+    ],
+    category: ["Frontend Application"],
+    displayCategory: "Responsive E-Commerce Website",
+    role: "Frontend Developer",
+    duration: "2026",
+    features: [
+      "Responsive clothing-store homepage",
+      "Men's clothing category",
+      "Women's clothing category",
+      "Kids' clothing category",
+      "Product listing and category filtering",
+      "Individual product detail pages",
+      "Dynamic product routing using URL parameters",
+      "Breadcrumb navigation",
+      "Shopping cart interface",
+      "Login and signup forms",
+      "Popular products section",
+      "Exclusive offers banner",
+      "New collections grid",
+      "Newsletter subscription interface",
+      "Reusable product cards and UI components",
+      "Global shop state using React Context API",
+      "Mobile-friendly responsive layouts",
+      "Component-specific CSS styling"
+    ],
+    highlights:
+      "Developed a responsive clothing-store frontend using React 19, React Router DOM 7, and Vite 7. Implemented category-based product browsing, dynamic product detail routes, reusable components, and shared application state with React Context API.",
+    demo: "",
+    code: "https://github.com/umindudinal/e-commerce-website"
   }
 ];
 
