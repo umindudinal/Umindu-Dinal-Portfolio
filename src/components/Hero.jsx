@@ -4,10 +4,12 @@ import { assets, heroStats } from '../assets/assets'
 import { FaArrowRight, FaDownload, FaReact, FaServer, FaCode, FaGithub, FaLinkedin, FaMicrochip } from 'react-icons/fa'
 
 const titles = [
-  "Mobile App & Systems Developer",
-  "Full-Stack Software Engineer",
-  "AI & Deep Learning Developer",
-  "Backend & Cloud API Developer"
+  "Mobile App Developer",
+  "Systems Developer",
+  "Full-Stack Developer",
+  "Machine Learning Engineer",
+  "AI Engineer",
+  "API Cloud Engineer"
 ];
 
 const Hero = () => {
