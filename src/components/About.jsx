@@ -94,7 +94,7 @@ const About = () => {
                 I am an IT Undergraduate at <strong className="text-white">ITUM (University of Moratuwa)</strong>, specializing in software engineering, full-stack web development, AI computer vision, and embedded systems.
               </p>
               <p className='text-gray-300 leading-relaxed text-base'>
-                My skill set covers building web & mobile apps with <strong className="text-purple">React 19, Flutter & Tailwind CSS</strong>, robust backend APIs using <strong className="text-purple">Spring Boot 3, Java 21, Node.js & MySQL</strong>, and C# .NET desktop software.
+                My skill set covers building web & mobile apps with <strong className="text-purple">React 19, Flutter & Tailwind CSS</strong>, robust backend APIs using <strong className="text-purple">Spring Boot 3, Java 21, Node.js & MySQL</strong>, and <strong className="text-purple">Java Swing & C# .NET</strong> desktop software.
               </p>
               <p className='text-gray-300 leading-relaxed text-base'>
                 I also engineer AI computer vision models (<strong className="text-purple">YOLOv8, OpenCV, TensorFlow</strong>) and embedded microcontroller automation (<strong className="text-purple">ATmega32, Embedded C & Proteus</strong>).

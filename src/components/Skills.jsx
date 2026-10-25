@@ -13,7 +13,11 @@ import {
   FaNodeJs,
   FaDatabase,
   FaServer,
-  FaCss3
+  FaCss3,
+  FaDesktop,
+  FaWindows,
+  FaFileCode,
+  FaPlug
 } from 'react-icons/fa'
 import { 
   SiSpringboot, 
@@ -21,6 +25,7 @@ import {
   SiMysql, 
   SiDotnet, 
   SiFlutter,
+  SiDart,
   SiTensorflow,
   SiOpencv,
   SiVite,
@@ -28,66 +33,79 @@ import {
   SiStreamlit,
   SiFramer,
   SiSupabase,
-  SiMongodb,
   SiPostgresql,
+  SiSqlite,
   SiLeaflet,
   SiPostman,
-  SiJsonwebtokens
+  SiJsonwebtokens,
+  SiHibernate,
+  SiApachemaven,
+  SiReactrouter
 } from 'react-icons/si'
 
 const techStack = [
-  // Languages
+  // Languages (8)
   { name: 'Java 21', category: 'Languages', icon: FaJava, color: 'text-amber-400', level: 'Core Lang' },
   { name: 'Python', category: 'Languages', icon: FaPython, color: 'text-blue-400', level: 'Core Lang' },
   { name: 'C#', category: 'Languages', icon: SiDotnet, color: 'text-purple-400', level: 'Core Lang' },
   { name: 'JavaScript', category: 'Languages', icon: FaJs, color: 'text-yellow-400', level: 'Core Lang' },
-  { name: 'Dart', category: 'Languages', icon: SiFlutter, color: 'text-sky-400', level: 'Core Lang' },
+  { name: 'Dart', category: 'Languages', icon: SiDart, color: 'text-sky-400', level: 'Core Lang' },
   { name: 'Embedded C', category: 'Languages', icon: FaMicrochip, color: 'text-rose-400', level: 'Microcontroller' },
   { name: 'PHP', category: 'Languages', icon: FaPhp, color: 'text-indigo-400', level: 'Web Lang' },
   { name: 'SQL', category: 'Languages', icon: FaDatabase, color: 'text-cyan-400', level: 'Query Lang' },
 
-  // Frontend & Mobile
+  // Frontend & Mobile (8)
   { name: 'React 19', category: 'Frontend', icon: FaReact, color: 'text-cyan-400', level: 'Web UI' },
-  { name: 'Tailwind CSS 4', category: 'Frontend', icon: SiTailwindcss, color: 'text-sky-400', level: 'Styling' },
   { name: 'Flutter', category: 'Frontend', icon: SiFlutter, color: 'text-sky-400', level: 'Mobile UI' },
-  { name: 'Framer Motion', category: 'Frontend', icon: SiFramer, color: 'text-pink-400', level: 'Animations' },
+  { name: 'Tailwind CSS 4', category: 'Frontend', icon: SiTailwindcss, color: 'text-sky-400', level: 'Styling' },
+  { name: 'React Router 7', category: 'Frontend', icon: SiReactrouter, color: 'text-rose-400', level: 'Navigation' },
   { name: 'Vite 7', category: 'Frontend', icon: SiVite, color: 'text-purple-400', level: 'Build Tool' },
+  { name: 'Framer Motion', category: 'Frontend', icon: SiFramer, color: 'text-pink-400', level: 'Animations' },
   { name: 'HTML5', category: 'Frontend', icon: FaHtml5, color: 'text-orange-400', level: 'Markup' },
   { name: 'CSS3', category: 'Frontend', icon: FaCss3, color: 'text-blue-400', level: 'Styling' },
 
-  // Backend & Frameworks
+  // Desktop & GUI (4)
+  { name: 'Java Swing', category: 'Desktop', icon: FaDesktop, color: 'text-amber-500', level: 'Desktop GUI' },
+  { name: 'Windows Forms', category: 'Desktop', icon: FaWindows, color: 'text-blue-400', level: 'Desktop GUI' },
+  { name: '.NET Framework', category: 'Desktop', icon: SiDotnet, color: 'text-purple-400', level: 'Desktop Apps' },
+  { name: 'CustomTkinter', category: 'Desktop', icon: FaPython, color: 'text-emerald-400', level: 'Python GUI' },
+
+  // Backend & Architecture (7)
   { name: 'Spring Boot 3', category: 'Backend', icon: SiSpringboot, color: 'text-emerald-400', level: 'Backend API' },
   { name: 'Node.js & Express', category: 'Backend', icon: FaNodeJs, color: 'text-emerald-500', level: 'REST API' },
   { name: 'RESTful APIs', category: 'Backend', icon: FaServer, color: 'text-indigo-300', level: 'Architecture' },
+  { name: 'Hibernate & JPA', category: 'Backend', icon: SiHibernate, color: 'text-amber-300', level: 'ORM Persistence' },
+  { name: 'JDBC & ADO.NET', category: 'Backend', icon: FaPlug, color: 'text-teal-400', level: 'DB Connectivity' },
   { name: 'JWT Auth', category: 'Backend', icon: SiJsonwebtokens, color: 'text-pink-400', level: 'Security' },
   { name: 'Firebase FCM', category: 'Backend', icon: SiFirebase, color: 'text-amber-500', level: 'Push / Cloud' },
-  { name: '.NET Framework', category: 'Backend', icon: SiDotnet, color: 'text-purple-400', level: 'Desktop & Web' },
 
-  // Databases
+  // Databases & Storage (6)
+  { name: 'MySQL 8.0+', category: 'Databases', icon: SiMysql, color: 'text-sky-500', level: 'RDBMS' },
   { name: 'PostgreSQL', category: 'Databases', icon: SiPostgresql, color: 'text-sky-400', level: 'RDBMS' },
   { name: 'Supabase', category: 'Databases', icon: SiSupabase, color: 'text-emerald-400', level: 'Cloud DB' },
-  { name: 'MySQL', category: 'Databases', icon: SiMysql, color: 'text-sky-500', level: 'RDBMS' },
   { name: 'MS SQL Server', category: 'Databases', icon: FaDatabase, color: 'text-red-400', level: 'RDBMS' },
-  { name: 'SQLite', category: 'Databases', icon: FaDatabase, color: 'text-blue-300', level: 'Embedded DB' },
-  { name: 'MongoDB', category: 'Databases', icon: SiMongodb, color: 'text-green-400', level: 'NoSQL DB' },
+  { name: 'SQLite', category: 'Databases', icon: SiSqlite, color: 'text-blue-300', level: 'Embedded DB' },
+  { name: 'File Persistence', category: 'Databases', icon: FaFileCode, color: 'text-violet-400', level: 'File Storage' },
 
-  // AI, Tools & GIS
-  { name: 'Leaflet & GIS', category: 'Tools & ML', icon: SiLeaflet, color: 'text-emerald-400', level: 'GIS Mapping' },
+  // AI, Tools & Embedded (9)
   { name: 'YOLOv8', category: 'Tools & ML', icon: FaBrain, color: 'text-pink-400', level: 'Vision ML' },
-  { name: 'OpenCV & EasyOCR', category: 'Tools & ML', icon: SiOpencv, color: 'text-red-400', level: 'Computer Vision' },
   { name: 'TensorFlow / Keras', category: 'Tools & ML', icon: SiTensorflow, color: 'text-orange-500', level: 'Deep Learning' },
-  { name: 'Postman', category: 'Tools & ML', icon: SiPostman, color: 'text-orange-400', level: 'API Testing' },
+  { name: 'Leaflet & GIS', category: 'Tools & ML', icon: SiLeaflet, color: 'text-emerald-400', level: 'GIS Mapping' },
+  { name: 'Apache Maven', category: 'Tools & ML', icon: SiApachemaven, color: 'text-rose-400', level: 'Build Tool' },
   { name: 'Streamlit', category: 'Tools & ML', icon: SiStreamlit, color: 'text-rose-500', level: 'AI Web Apps' },
-  { name: 'ATmega32 & Proteus', category: 'Tools & ML', icon: FaMicrochip, color: 'text-yellow-500', level: 'Embedded IoT' },
+  { name: 'Postman', category: 'Tools & ML', icon: SiPostman, color: 'text-orange-400', level: 'API Testing' },
   { name: 'Git & GitHub', category: 'Tools & ML', icon: FaGitAlt, color: 'text-orange-500', level: 'Version Control' },
+  { name: 'OpenCV & EasyOCR', category: 'Tools & ML', icon: SiOpencv, color: 'text-red-400', level: 'Computer Vision' },
+  { name: 'ATmega32 & Proteus', category: 'Tools & ML', icon: FaMicrochip, color: 'text-yellow-500', level: 'Embedded IoT' },
 ];
 
 const categories = [
   { id: 'Languages', label: 'Languages' },
   { id: 'Frontend', label: 'Frontend & Mobile' },
+  { id: 'Desktop', label: 'Desktop & GUI' },
   { id: 'Backend', label: 'Backend & APIs' },
   { id: 'Databases', label: 'Databases' },
-  { id: 'Tools & ML', label: 'AI, Tools & GIS' },
+  { id: 'Tools & ML', label: 'AI, Tools & IoT' },
 ];
 
 const Skills = () => {
@@ -108,7 +126,7 @@ const Skills = () => {
             Skills & <span className='text-gradient'>Technologies</span>
           </h2>
           <p className='text-gray-400 text-base sm:text-lg leading-relaxed'>
-            A comprehensive, interactive showcase of programming languages, frameworks, AI models, databases, and engineering tools I utilize in real-world applications.
+            A comprehensive, interactive showcase of programming languages, frameworks, desktop software, databases, AI models, and engineering tools derived directly from my real-world projects.
           </p>
         </div>
 

@@ -27,6 +27,7 @@ import projectImg8 from '../assets/project8.avif';
 import projectImg9 from '../assets/project9.avif';
 import projectImg10 from '../assets/project10.avif';
 import projectImg11 from '../assets/project11.avif';
+import projectImg12 from '../assets/project12.avif';
 import logo from '../assets/logo.avif';
  
 export const assets = {
@@ -59,7 +60,7 @@ export const aboutInfo = [
   {
     icon: FaShieldAlt,
     title: 'Desktop & Embedded Systems',
-    description: 'Developing C# .NET desktop applications and ATmega32 microcontroller embedded automation.',
+    description: 'Developing Java Swing & C# .NET desktop applications and ATmega32 microcontroller embedded automation.',
     color: 'text-emerald'
   }
 ];
@@ -68,32 +69,38 @@ export const skills = [
   {
     title: 'Programming Languages',
     icon: FaCode,
-    description: 'Core languages used for building web apps, backends, mobile apps, and embedded systems.',
+    description: 'Core languages used for building web apps, backends, mobile apps, desktop systems, and embedded controllers.',
     tags: ['Java 21', 'Python', 'C#', 'JavaScript', 'Dart', 'Embedded C', 'PHP', 'SQL']
   },
   {
     title: 'Frontend & Mobile',
     icon: FaReact,
-    description: 'Crafting responsive user interfaces, mobile applications, and dynamic web portals.',
-    tags: ['React 19', 'Flutter', 'Tailwind CSS 4', 'Framer Motion', 'HTML5/CSS3', 'Vite 7']
+    description: 'Crafting responsive user interfaces, cross-platform mobile apps, and client-side web routing.',
+    tags: ['React 19', 'Flutter', 'Tailwind CSS 4', 'React Router 7', 'Vite 7', 'Framer Motion', 'HTML5/CSS3']
+  },
+  {
+    title: 'Desktop & Systems',
+    icon: FaShieldAlt,
+    description: 'Developing desktop applications with GUI frameworks, database integration, and embedded microcontroller automation.',
+    tags: ['Java Swing', 'Windows Forms', '.NET Framework', 'CustomTkinter', 'ATmega32 & AVR', 'Proteus Simulation']
   },
   {
     title: 'Backend & Frameworks',
     icon: FaServer,
-    description: 'Engineering robust RESTful APIs, business logic layers, and server-side microservices.',
-    tags: ['Spring Boot 3', 'Node.js & Express', 'RESTful APIs', 'JWT Auth', 'Firebase FCM', '.NET Framework']
+    description: 'Engineering robust RESTful APIs, data persistence layers, token authentication, and cloud messaging.',
+    tags: ['Spring Boot 3', 'Node.js & Express', 'RESTful APIs', 'Hibernate & JPA', 'JDBC & ADO.NET', 'JWT Auth', 'Firebase FCM']
   },
   {
     title: 'Databases & Storage',
     icon: FaDatabase,
-    description: 'Designing, querying, and optimizing relational data structures and persistence layers.',
-    tags: ['PostgreSQL', 'Supabase', 'MySQL', 'Microsoft SQL Server', 'SQLite', 'MongoDB']
+    description: 'Designing, querying, and managing relational databases, cloud databases, and persistent file stores.',
+    tags: ['MySQL 8.0+', 'PostgreSQL', 'Supabase', 'Microsoft SQL Server', 'SQLite', 'File I/O Persistence']
   },
   {
-    title: 'AI, Tools & GIS',
+    title: 'AI, Tools & Engineering',
     icon: FaTools,
-    description: 'Computer vision detection models, OCR, GIS mapping, API testing, and embedded microcontrollers.',
-    tags: ['Leaflet & GIS', 'YOLOv8', 'OpenCV & EasyOCR', 'TensorFlow / Keras', 'Postman', 'Streamlit', 'ATmega32', 'Git & GitHub']
+    description: 'Computer vision detection models, OCR, deep learning, GIS mapping, API testing, and build management.',
+    tags: ['YOLOv8', 'OpenCV & EasyOCR', 'TensorFlow / Keras', 'Leaflet & GIS', 'Apache Maven', 'Streamlit', 'Postman', 'Git & GitHub']
   }
 ];
 
@@ -133,7 +140,7 @@ export const projects = [
       "Nodemailer"
     ],
     category: ["Full Stack Application"],
-    displayCategory: "University Project",
+    displayCategory: "Safari Management",
     role: "Full-Stack Developer",
     duration: "2026",
     features: [
@@ -182,7 +189,7 @@ export const projects = [
       "Image Cropper"
     ],
     category: ["Mobile Application"],
-    displayCategory: "Mobile App",
+    displayCategory: "Home Services",
     role: "Mobile App Developer",
     duration: "2026",
     features: [
@@ -223,7 +230,7 @@ export const projects = [
       "Microsoft SQL Server"
     ],
     category: ["Mobile Application"],
-    displayCategory: "Mobile App",
+    displayCategory: "AI Agriculture",
     role: "Full-Stack Developer",
     duration: "2026",
     features: [
@@ -259,7 +266,7 @@ export const projects = [
       "NumPy"
     ],
     category: ["Desktop Application"],
-    displayCategory: "Security System",
+    displayCategory: "ANPR Security",
     role: "AI / Full-Stack Developer",
     duration: "2026",
     features: [
@@ -296,7 +303,7 @@ export const projects = [
       "Lombok"
     ],
     category: ["Backend API"],
-    displayCategory: "Backend REST API",
+    displayCategory: "E-Commerce API",
     role: "Backend Developer",
     duration: "2025",
     features: [
@@ -331,7 +338,7 @@ export const projects = [
       "Visual Studio 2022"
     ],
     category: ["Desktop Application"],
-    displayCategory: "Desktop App",
+    displayCategory: "Desktop Library",
     role: "Full-Stack Developer",
     duration: "2025",
     features: [
@@ -368,7 +375,7 @@ export const projects = [
       "XAMPP"
     ],
     category: ["Full Stack Application"],
-    displayCategory: "Full Stack",
+    displayCategory: "Campus Events",
     role: "Full-Stack Developer",
     duration: "2025",
     features: [
@@ -409,7 +416,7 @@ export const projects = [
       "16x2 LCD"
     ],
     category: ["Embedded & IoT"],
-    displayCategory: "IoT & Embedded System",
+    displayCategory: "Home Automation",
     role: "Embedded Systems Developer",
     duration: "2026",
     features: [
@@ -447,7 +454,7 @@ export const projects = [
       "GitHub Pages"
     ],
     category: ["Frontend Application"],
-    displayCategory: "Sri Lankan Tourism Application",
+    displayCategory: "Tourism Web App",
     role: "Frontend Developer",
     duration: "2025",
     features: [
@@ -464,7 +471,7 @@ export const projects = [
       "Deployed and hosted using GitHub Pages"
     ],
     highlights: "Designed and developed a modern Sri Lankan tourism experience using React 19 and Tailwind CSS 4, combining responsive UI, destination discovery, tour packages, smooth navigation, and engaging scroll animations.",
-    demo: "https://umindudinal.github.io/GoCeylon/",
+    demo: "https://goceylon.vercel.app/",
     code: "https://github.com/umindudinal/GoCeylon.git"
   },
   {
@@ -492,7 +499,7 @@ export const projects = [
       "IntelliJ IDEA"
     ],
     category: ["Console Application"],
-    displayCategory: "Java-Based Library Management System",
+    displayCategory: "Console Library",
     role: "Java Developer",
     duration: "2026",
     features: [
@@ -545,7 +552,7 @@ export const projects = [
       "GitHub"
     ],
     category: ["Frontend Application"],
-    displayCategory: "Responsive E-Commerce Website",
+    displayCategory: "E-Commerce Store",
     role: "Frontend Developer",
     duration: "2026",
     features: [
@@ -570,8 +577,66 @@ export const projects = [
     ],
     highlights:
       "Developed a responsive clothing-store frontend using React 19, React Router DOM 7, and Vite 7. Implemented category-based product browsing, dynamic product detail routes, reusable components, and shared application state with React Context API.",
-    demo: "",
+    demo: "https://shoperapp.vercel.app/",
     code: "https://github.com/umindudinal/e-commerce-website"
+  },
+  {
+    id: "swiftpos-system",
+    title: "SwiftPOS – Point of Sale & Inventory Management System",
+    description:
+      "A Java desktop POS application for retail businesses, featuring sales checkout, inventory management, customer records, transaction history, and automated receipt generation.",
+    longDescription:
+      "SwiftPOS is a desktop-based Point of Sale and retail management system developed using Java Swing and MySQL. It helps small and medium-sized retail businesses manage daily sales, product inventory, customer information, and transaction records through a unified interface. The application includes login authentication, a business dashboard with sales metrics, barcode-based product lookup, dynamic shopping cart management, stock reduction after checkout, cash and card payment options, change calculation, and printable receipts. JDBC connects the application to the MySQL database, while Apache Maven manages the project build and dependencies.",
+    image: projectImg12,
+    tech: [
+      "Java",
+      "JDK 17+",
+      "Java Swing",
+      "Nimbus Look and Feel",
+      "MySQL 8.0+",
+      "JDBC",
+      "MySQL Connector/J",
+      "Apache Maven",
+      "SQL",
+      "PreparedStatement",
+      "Object-Oriented Programming",
+      "CRUD Operations",
+      "NetBeans IDE",
+      "Git",
+      "GitHub"
+    ],
+    category: ["Desktop Application"],
+    displayCategory: "Retail POS",
+    role: "Java Desktop Application Developer",
+    duration: "2026",
+    features: [
+      "Login authentication for authorized users",
+      "Main dashboard with daily sales metrics",
+      "Daily revenue and transaction count",
+      "Low-stock product monitoring",
+      "Recent transaction overview",
+      "New sale and checkout processing",
+      "Product search by name or barcode",
+      "Dynamic shopping cart management",
+      "Automatic inventory reduction after checkout",
+      "Cash and card payment options",
+      "Discount and change calculation",
+      "Formatted receipt generation and printing",
+      "Product create, read, update, and delete operations",
+      "Automatic product barcode generation",
+      "Product category management",
+      "Customer record management",
+      "Customer lookup during checkout",
+      "Sales history and invoice tracking",
+      "Transaction detail inspection",
+      "Receipt reprinting",
+      "MySQL database integration",
+      "SQL injection protection using PreparedStatement"
+    ],
+    highlights:
+      "Developed a Java Swing POS application integrated with MySQL through JDBC. Implemented retail checkout workflows, inventory updates, customer management, transaction auditing, receipt generation, and dashboard metrics, with Maven-based project configuration.",
+    demo: "",
+    code: "https://github.com/umindudinal/SwiftPOS-System"
   }
 ];
 
@@ -619,7 +684,7 @@ export const workData = [
       "Engineered ITUM Student Event Management Web Platform using PHP, JavaScript, and MySQL",
       "Designed ATmega32 Smart Home Automation System using Embedded C and Proteus circuit simulation"
     ],
-    skills: ["Spring Boot 3", "Java 21", "C# .NET", "PHP", "MySQL", "SQL Server", "Embedded C"],
+    skills: ["Spring Boot 3", "Java 21", "Java Swing", "C# .NET", "PHP", "MySQL", "SQL Server", "Embedded C"],
     color: "blue"
   }
 ];
